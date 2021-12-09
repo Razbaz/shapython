@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "telemetrytest"
+version = "0.1.0"
+description = ""
+authors = ["Дмитрий Дыгин <dmitriy.dygin@vkpay.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+opentelemetry-api = "^1.7.1"
+opentelemetry-sdk = "^1.7.1"
+opentelemetry-exporter-jaeger = "^1.7.1"
+dependency-injector = "^4.37.0"
+tinyrpc = "^1.1.2"
+requests = "^2.26.0"
+opentelemetry-propagator-b3 = "^1.7.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
